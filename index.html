@@ -1,0 +1,1320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+	  <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title></title>
+  </head>
+  <body>
+    <div id="mySidebar" class="sidebar shadow">
+      <div class="text-center">
+        <h4 class="text-primary mb-4"><img src="img/logo.jpg" alt="logo" style="width: 65%;"></h4>
+      </div>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#" class="active nav-item" id="dash_nav"><i class="fa fa-question-circle-o border-box mr-2" aria-hidden="true"></i>Dashboard</a>
+      <a href="#" class="nav-item" id="strategy_nav"><i class="fa fa-question-circle-o border-box mr-2" aria-hidden="true"></i>Application Strategy</a>
+      <a href="#" class="nav-item" id="six_nav"><i class="fa fa-question-circle-o border-box mr-2" aria-hidden="true"></i>6R Framework</a>
+      <a href="#" class="nav-item" id="method_nav"><i class="fa fa-question-circle-o border-box mr-2" aria-hidden="true"></i>Methodology</a>
+      <a href="#" class="nav-item" id="guide_nav"><i class="fa fa-question-circle-o border-box mr-2" aria-hidden="true"></i>Guiding Principles</a>
+      <a href="#" class="nav-item" id="year_nav"><i class="fa fa-question-circle-o border-box mr-2" aria-hidden="true"></i>Year in Review</a>
+      <!-- <a href="#" class="nav-item" id="year_nav_new"><i class="fa fa-question-circle-o border-box mr-2" aria-hidden="true"></i>Year in Review</a> -->
+      <a href="#" class="nav-item" id="analytics_nav"><i class="fa fa-question-circle-o border-box mr-2" aria-hidden="true"></i>Analytics</a>
+      <a href="#" class="nav-item" id="metrics_nav"><i class="fa fa-question-circle-o border-box mr-2" aria-hidden="true"></i>Metrics</a>
+    </div>
+
+     <header id="header_sec">
+       <nav class="navbar navbar-expand-lg">
+        <i class="fa fa-arrow-circle-o-left border-box openbtn" onclick="openNav()"aria-hidden="true" style="font-size: 30px !important;"></i>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background: #000;">
+        <span class="navbar-toggler-icon" style="color: #fff;"><i class="fa fa-bars"></i></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: 100%;">
+        <div class="row" style="display: contents;">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-1">
+               
+              </div>
+              <div class="col-md-6">
+                <input type="text" placeholder="Search.." class="form-control header_search">
+                <i class="fa fa-search header_search_icon" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <i class="fa fa-bell text-primary" aria-hidden="true"></i>
+                <span class="notification_count">6</span>
+              </div>
+              <div class="col-md-6">
+              
+                <div class="dropdown">
+                <button type="button" class="btn dropdown-toggle user_button profile" data-toggle="dropdown">
+                  <img src="https://uifaces.co/our-content/donated/vIqzOHXj.jpg" class="user_img"> 
+                  <span><b>Vijay Badal</b><br><span>Admin</span></span>
+                  </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Link 1</a>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                  <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+              </div>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </header>
+    </nav>
+    <div id="main">
+     
+      <div class="p-3">
+        
+        <div class="count_upper">
+          <h4 class="text-bold mb-4">Applications Dashboard</h4>
+          <div class="row count_sec">
+            <div class="col-md-6 col-lg-3 mb-3">
+              <div class="bg-white p-2 count_inner_sec">
+                <p class="text-muted"><small>Oracle Modules</small></p>
+                <h4>25</h4>
+                
+                  <i class="fa fa-users" aria-hidden="true"></i>
+                
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-3">
+              <div class="bg-white p-2 count_inner_sec">
+                <p class="text-muted"><small>Web Sites</small></p>
+                <h4>223</h4>
+                
+                  <i class="fa fa-cube" aria-hidden="true"></i>
+                
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-3">
+              <div class="bg-white p-2 count_inner_sec">
+                <p class="text-muted"><small>COTS Applications</small></p>
+                <h4>450</h4>
+                
+                  <i class="fa fa-line-chart" aria-hidden="true"></i>
+                
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-3">
+              <div class="bg-white p-2 count_inner_sec">
+                <p class="text-muted"><small>Legacy</small></p>
+                <h4>121</h4>
+                
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+    
+        <div class="content_sec bg-white mt-4">
+          <div class="p-4" id="six_content">
+            <h3 class="frame-heading mb-3">6R Framework</h3>
+            <div class="row content_center">
+              <div class="col-md-11">
+                <img src="img/6R.png" alt="" class="w-100 mb-2">
+              </div>
+            </div>
+            <div class="row content_center">
+              <div class="col-md-12 col-lg-6 mr-1 mb-2 fr_ct_sec">
+                <div class="main-count">
+                <div class="row main-inner">
+                  <div class="col-md-3 text-center vt-center">
+                    <p class="mt-4"><span class="r_count">R1</span></p>
+                  </div>
+                  <div class="col-md-3">
+                    <h6>Retain</h6>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="r_list">
+                      <li>Keep host/application in source environment</li>
+                      <li>Minimal analysis/validation of scope & application affinity</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-md-12 col-lg-6 mr-1 mb-2 fr_ct_sec">
+                <div class="main-count">
+                <div class="row main-inner">
+                  <div class="col-md-3 text-center vt-center">
+                    <p class="mt-4"><span class="r_count">R4</span></p>
+                  </div>
+                  <div class="col-md-3">
+                    <h6>Replatform</h6>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="r_list">
+                      <li>Up-version the OS/DB</li>
+                      <li>Make use of Amazon Relational Database Service (Amazon RDS)</li>
+                      <li>Some application changes</li>
+                      <li>App reinstallation and cleanup</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-md-12 col-lg-6 mr-1 mb-2 fr_ct_sec">
+                <div class="main-count">
+                <div class="row main-inner">
+                  <div class="col-md-3 text-center vt-center">
+                    <p class="mt-4"><span class="r_count">R2</span></p>
+                  </div>
+                  <div class="col-md-3">
+                    <h6>Retire</h6>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="r_list">
+                      <li>Decommission</li>
+                      <li>No migration of application</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-md-12 col-lg-6 mr-1 mb-2 fr_ct_sec">
+                <div class="main-count">
+                <div class="row main-inner">
+                  <div class="col-md-3 text-center vt-center">
+                    <p class="mt-4"><span class="r_count">R5</span></p>
+                  </div>
+                  <div class="col-md-3">
+                    <h6>Refactor</h6>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="r_list">
+                      <li>OS/DB porting</li>
+                      <li>Middleware and app changes to use AWS services natively</li>
+                      <li>Data conversion, DB transition (e.g., MySQL & Amazon Aurora)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-md-12 col-lg-6 mr-1 mb-2 fr_ct_sec">
+                <div class="main-count">
+                <div class="row main-inner">
+                  <div class="col-md-3 text-center vt-center">
+                    <p class="mt-4"><span class="r_count">R3</span></p>
+                  </div>
+                  <div class="col-md-3">
+                    <h6>Rehost</h6>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="r_list">
+                      <li>Like-for-like app migration to AWS</li>
+                      <li>Lift-and-shift approach</li>
+                      <li>Minimal effort to make tha application work 'in' the cloud or take advantage of cloud native services</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-md-12 col-lg-6 mr-1 mb-2 fr_ct_sec">
+                <div class="main-count">
+                <div class="row main-inner">
+                  <div class="col-md-3 text-center vt-center">
+                    <p class="mt-4"><span class="r_count">R6</span></p>
+                  </div>
+                  <div class="col-md-3">
+                    <h6>Rearchitect</h6>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="r_list">
+                      <li>Application architecture changes</li>
+                      <li>Using Software as a Service (SaaS) based offerings</li>
+                      <li>Porting of application architecture</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="p-4" id="method_content">
+            <h3 class="frame-heading mb-3">Best practices, methodology and guidelines for developers. These best practices are designed to enable applications to be built with portability and resilience when deployed to the web.</h3>
+            <br />
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div>
+                  <h5>I. Codebase</h5>
+                  <p class="text-muted ml-3">| One codebase tracked in revision control, many deploys</p>
+                  <img src="img/codebase.png" class="w-100" alt="Codebase">
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div>
+                  <h5>II. Dependencies</h5>
+                  <p class="text-muted ml-3">| Explicitly declare and isolate dependencies</p>
+                  <img src="img/dependencies.png" class="w-100" alt="Dependencies">
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div>
+                  <h5>III. Config</h5>
+                  <p class="text-muted ml-3">| Store config in the environment</p>
+                  <img src="img/config.png" class="w-100" alt="Config">
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div>
+                  <h5>IV. Backing Services</h5>
+                  <p class="text-muted ml-3">| Treat backing services as attached resources</p>
+                  <img src="img/backingsvcs.png" class="w-100" alt="Backing">
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div>
+                  <h5>V. Build, Release, Run</h5>
+                  <p class="text-muted ml-3">| Strictly separate build and run stages</p>
+                  <img src="img/buildreleaserun.png" class="w-100" alt="Build">
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div>
+                  <h5>VI. Processes</h5>
+                  <p class="text-muted ml-3">| Execute the app as one or more stateless processes</p>
+                  <img src="img/process.png" class="w-100" alt="Processes">
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div>
+                  <h5>VII. Port Binding</h5>
+                  <p class="text-muted ml-3">| Export services via port binding</p>
+                  <img src="img/portbindings.png" class="w-100" alt="Port">
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div>
+                  <h5>VIII. Concurrency</h5>
+                  <p class="text-muted ml-3">| Scale-out via the process mode</p>
+                  <img src="img/concurrancy.png" class="w-100" alt="Concurrency">
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div>
+                  <h5>IX. Disposability</h5>
+                  <p class="text-muted ml-3">| Maximize robustness with fast startup and graceful shutdown</p>
+                  <img src="img/coding.png" class="w-100" alt="Disposability">
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div>
+                  <h5>X. Dev/Prod Parity</h5>
+                  <p class="text-muted ml-3">| Keep development, staging, and production as similar as possible</p>
+                  <img src="img/parity.png" class="w-100" alt="Dev" style="padding: 7px;">
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div>
+                  <h5>XI. Logs</h5>
+                  <p class="text-muted ml-3">| Treat logs as event streams</p>
+                  <img src="img/logs.png" class="w-100" alt="Logs">
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div>
+                  <h5>XII. Admin Processes</h5>
+                  <p class="text-muted ml-3">| Run admin/management tasks as one-off processes</p>
+                  <img src="img/adminprocess.png" class="w-100" alt="Admin">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4" id="guide_content">
+            <div class="row content_center">
+              <div class="col-md-10">
+                <h4 class="green_hdg_clr text-white p-2  text-center"><span><i class="fa fa-check" aria-hidden="true"></i></span>Transform
+                </h4>
+                <div class="guide_sec_green">
+                  <p class="text-center">These principles drive our technology future and lay out the vision for consolidated, cloud based,
+                    interoperable services that can transform County and City government service delivery.
+                    </p>
+                    <div class="bg-white">
+                      <div class="row">
+                        <div class="col-md-4 p-2">
+                          <div class="guide_inner_sec_grn p-3">
+                            <p>All technology implementations should utilize Strategic Shared Services Platforms whenever possible.
+                              </p>
+                          </div>
+                        </div>
+                        <div class="col-md-4 p-2">
+                          <div class="guide_inner_sec_grn p-3">
+                            <p>If a Strategic Shared Services platform is not appropriate, a Managed Cloud solution that is interoperable with our Shared Services platforms should be chosen.
+                              </p>
+                          </div>
+                        </div>
+                        <div class="col-md-4 p-2">
+                          <div class="guide_inner_sec_grn p-3">
+                            <p>Give preference to solutions that work on any device, enable mobility and easily coordinate with other products.
+                              </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+    
+                <div class="text-center process_sec">
+                  <img src="img/cycle_new.png" alt="process" style="width: 55%;">
+                </div>
+    
+                <h4 class="run_hdg_clr text-white p-2  text-center"><span><i class="fa fa-check" aria-hidden="true"></i></span>Run
+                </h4>
+                <div class="guide_sec_blue">
+                  <p class="text-center">These principles are the bedrock of quality service delivery. These practices ensure a stable,
+                    secure and supportable technology environment that runs consistently.
+                    </p>
+                    <div class="bg-white">
+                      <div class="row" style="justify-content: center;">
+                        <div class="col-md-4 p-2">
+                          <div class="guide_inner_sec_blue p-3">
+                            <p>We will achieve Service Level Agreements and Customer Satisfaction standards.
+                              </p>
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-4 p-2">
+                          <div class="guide_inner_sec_blue p-3">
+                            <p>We will take all appropriate measures to ensure Stable, Secure and Supportable operating conditions as efficiently as possible.
+                              </p>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            
+          <div class="p-4" id="year_content">
+
+            <div class="row mb-3">
+              <div class="col-md-3 col-lg-1 mr-3 p-0 mb-2 mg-0">
+                <button class="btn shadow p-0 btn-block p-3 bg-white nav-btn active" id="twenty"><p class="analytics-tab mb-0">2020</p></button>
+              </div>
+              <div class="col-md-3 col-lg-1 mr-3 p-0 mb-2 mg-0">
+                <button class="btn shadow p-0 btn-block p-3 bg-white nav-btn grn-bg-btn" id="twentyone"><p class="analytics-tab mb-0">2021</p></button>
+              </div>
+             
+            </div>
+            <div class="inner-year" id="twenty_content">
+            
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="shadow pt-2 pb-3 pl-2 pr-2 bdr-rd h-rv-box">
+                    <h5 class="m-0 mb-2 pt-2 text-center">DC Rental Assistance</h5>
+                  <p class="p-medium">Developed an application in collaboration with General Assistance, Deloitte, and Oracle team to assist residents of Douglas County who have suffered substantial financial hardship and now lack sufficient income or resources to pay their rental housing costs and utilities because of the COVID-19.</p>
+                  
+                </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="shadow pt-2 pb-3 pl-2 pr-2 bdr-rd h-rv-box">
+                    <h5 class="m-0 mb-2 pt-2 text-center">New Solid Waste Collection System</h5>
+                  <p class="p-medium">The City of Omaha transitioned to a new solid waste collection system from waste management to FCC. This required significant system, business processes and integration changes.</p>
+                  
+                </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="shadow pt-2 pb-3 pl-2 pr-2 bdr-rd h-rv-box">
+                    <h5 class="m-0 mb-2 pt-2 text-center">Board of Equalization</h5>
+                  <p class="p-medium">Significant Salesforce enhancements were implemented to support and streamline this years Board of Equalization process. New web module was implemented to allow protests up to 5 years old to be viewable by the public. Administration section was made available to recreate the exact reports provided by the vendor for previous years prior to integration with Salesforce.</p>
+                 
+                  </div>
+                </div>
+
+                
+              </div>
+              <br />
+              <div>
+                <div class="row">
+                 
+                <div class="row grey-box mt-2">
+                    <div class="col-md-12 col-lg-6">
+                      <div class="p-3 bdr-rd h-ct-box">
+                        <div class="row year-box bdr-left">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-3 text-center step-one-bx">
+                                  <div>
+                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                  </div>
+                                </div>
+                              <div class="col-md-9">
+                                <h5>Omaha Lead Registry</h5>
+                                <p>Redesign of Omaha Lead Registry site to share public information regarding the lead superfund sites in the City of Omaha</p>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-right">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                              
+                              <div class="col-md-9">
+                                <h5>Omaha Lead Management Dust Module</h5>
+                                <p>Rewrite of the EPA's lead dust management application for the DCHD and incorporated into the Omaha Lead Management System</p>
+                              </div>
+                              <div class="col-md-3 text-center step-two-bx">
+                                <div>
+                                  <i class="fa fa-trophy" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-left">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-3 text-center step-three-bx">
+                                  <div>
+                                    <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                                  </div>
+                                </div>
+                              <div class="col-md-9">
+                                <h5>Park Omaha Handicap Stalls</h5>
+                                <p>New feature for public to view handicap accessible stalls within the Park Omaha Facilities and Partners</p>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-right">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-9">
+                                  <h5>City Finance Budget Enhancements</h5>
+                                  <p>Yearly enhancements for the City of Omaha Budget Application System</p>
+                                </div>
+                              <div class="col-md-3 text-center step-four-bx">
+                                <div>
+                                  <i class="fa fa-money" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-left">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-3 text-center step-five-bx">
+                                  <div>
+                                    <i class="fa fa-users" aria-hidden="true"></i>
+                                  </div>
+                                </div>
+                              <div class="col-md-9">
+                                <h5>Douglas County Student Threat Advisory</h5>
+                                <p>New website to support DCSTAT team communication between law enforcement, mental health, and education leaders</p>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-right">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-9">
+                                  <h5>City Finance HSA Enhancements</h5>
+                                  <p>Added additional HSA groups for selection of deductions year round and incorporated into payroll stubs application</p>
+                                </div>
+                              <div class="col-md-3 text-center step-six-bx">
+                                <div>
+                                  <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-left">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-3 text-center step-seven-bx">
+                                  <div>
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                  </div>
+                                </div>
+                              <div class="col-md-9">
+                                <h5>GraniteNET</h5>
+                                <p>Implementation and media interface (Interface to move media files into the GraniteNet Web Inerface for PWKS Sewer division</p>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-6">
+                      <div class="p-3 bdr-rd h-ct-box">
+                        <div class="row year-box bdr-left">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-3 text-center step-eight-bx">
+                                  <div>
+                                    <i class="fa fa-shield" aria-hidden="true"></i>
+                                  </div>
+                                </div>
+                              <div class="col-md-9">
+                                <h5>AWS Solid Waste Migration</h5>
+                                <p>Migrated PWKS solid waste application to AWS for improved security and modern platform</p>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-right">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-9">
+                                  <h5>AWS Victim Witness Migration</h5>
+                                  <p>Migrated DC Victim Witness Unit's Case Management System to AWS for improved security and modern platform</p>
+                                </div>
+                              <div class="col-md-3 text-center step-nine-bx">
+                                <div>
+                                  <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-left">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-3 text-center step-ten-bx">
+                                  <div>
+                                    <i class="fa fa-file-o" aria-hidden="true"></i>
+                                  </div>
+                                </div>
+                              <div class="col-md-9">
+                                <h5>Attorney Invoice System</h5>
+                                <p>e-filing of motions (DC Juvenile Court enhancement to electronically file motions for Atty Fees with the State of Nebraska.</p>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-right">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-9">
+                                  <h5>Application Patching</h5>
+                                  <p>Creation a process of identification, and delivery of application patching.  Also creation of processes and reports to identity and handle exceptions</p>
+                                </div>
+                              <div class="col-md-3 text-center step-eleven-bx">
+                                <div>
+                                  <i class="fa fa-indent" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-left">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-3 text-center step-twelve-bx">
+                                  <div>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                  </div>
+                                </div>
+                              <div class="col-md-9">
+                                <h5>iNovah Cashering System</h5>
+                                <p>Implemented iNovah at three additional locations for Douglas County Health Department</p>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-right">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-9">
+                                  <h5>OFD Zoll evaluation - Move to hosted services</h5>
+                                  <p>Overall evaluation of DOTComm hosted versus vendor hosted solutions for ePCR and FireRMS.  Effort has led the customer to move these applications to a vendor hosting model.   </p>
+                                </div>
+                              <div class="col-md-3 text-center step-thirteen-bx">
+                                <div>
+                                  <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-left">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-3 text-center step-fourteen-bx">
+                                  <div>
+                                    <i class="fa fa-window-restore" aria-hidden="true"></i>
+                                  </div>
+                                </div>
+                                <div class="col-md-9">
+                                  <h5>Environmental Services migration to FastLane</h5>
+                                  <p>Implementation of a new software at the landfill for transaction processing.  </p>
+                                </div>
+                              
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                      </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+
+          <div class="inner-year" id="twentyone_content">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="shadow pt-2 pb-3 pl-2 pr-2 bdr-rd h-rv-box bdr-top-grn">
+                  <h5 class="m-0 mb-2 pt-2 text-center txt-grn">DC Rental Assistance</h5>
+                <p class="p-medium">Developed an application in collaboration with General Assistance, Deloitte, and Oracle team to assist residents of Douglas County who have suffered substantial financial hardship and now lack sufficient income or resources to pay their rental housing costs and utilities because of the COVID-19.</p>
+                
+              </div>
+              </div>
+              <div class="col-md-4">
+                <div class="shadow pt-2 pb-3 pl-2 pr-2 bdr-rd h-rv-box bdr-top-grn">
+                  <h5 class="m-0 mb-2 pt-2 text-center txt-grn">New Solid Waste Collection System</h5>
+                <p class="p-medium">The City of Omaha transitioned to a new solid waste collection system from waste management to FCC. This required significant system, business processes and integration changes.</p>
+                
+              </div>
+              </div>
+              <div class="col-md-4">
+                <div class="shadow pt-2 pb-3 pl-2 pr-2 bdr-rd h-rv-box bdr-top-grn">
+                  <h5 class="m-0 mb-2 pt-2 text-center txt-grn">Board of Equalization</h5>
+                <p class="p-medium">Significant Salesforce enhancements were implemented to support and streamline this years Board of Equalization process. New web module was implemented to allow protests up to 5 years old to be viewable by the public. Administration section was made available to recreate the exact reports provided by the vendor for previous years prior to integration with Salesforce.</p>
+               
+                </div>
+              </div>
+
+              
+            </div>
+            <br />
+            <div>
+              <div class="row">
+                 
+                <div class="row grey-box mt-2">
+                    <div class="col-md-6">
+                      <div class="p-3 bdr-rd h-ct-box">
+                        <div class="row year-box bdr-left-grn">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-3 text-center step-one-bx">
+                                  <div>
+                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                  </div>
+                                </div>
+                              <div class="col-md-9">
+                                <h5 class="txt-grn">Omaha Lead Registry</h5>
+                                <p>Redesign of Omaha Lead Registry site to share public information regarding the lead superfund sites in the City of Omaha</p>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-right-grn">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                              
+                              <div class="col-md-9">
+                                <h5 class="txt-grn">Omaha Lead Management Dust Module</h5>
+                                <p>Rewrite of the EPA's lead dust management application for the DCHD and incorporated into the Omaha Lead Management System</p>
+                              </div>
+                              <div class="col-md-3 text-center step-two-bx">
+                                <div>
+                                  <i class="fa fa-trophy" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-left-grn">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-3 text-center step-three-bx">
+                                  <div>
+                                    <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                                  </div>
+                                </div>
+                              <div class="col-md-9">
+                                <h5 class="txt-grn">Park Omaha Handicap Stalls</h5>
+                                <p>New feature for public to view handicap accessible stalls within the Park Omaha Facilities and Partners</p>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-right-grn">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-9">
+                                  <h5 class="txt-grn">City Finance Budget Enhancements</h5>
+                                  <p>Yearly enhancements for the City of Omaha Budget Application System</p>
+                                </div>
+                              <div class="col-md-3 text-center step-four-bx">
+                                <div>
+                                  <i class="fa fa-money" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-left-grn">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-3 text-center step-five-bx">
+                                  <div>
+                                    <i class="fa fa-users" aria-hidden="true"></i>
+                                  </div>
+                                </div>
+                              <div class="col-md-9">
+                                <h5 class="txt-grn">Douglas County Student Threat Advisory</h5>
+                                <p>New website to support DCSTAT team communication between law enforcement, mental health, and education leaders</p>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-right-grn">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-9">
+                                  <h5 class="txt-grn">City Finance HSA Enhancements</h5>
+                                  <p>Added additional HSA groups for selection of deductions year round and incorporated into payroll stubs application</p>
+                                </div>
+                              <div class="col-md-3 text-center step-six-bx">
+                                <div>
+                                  <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-left-grn">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-3 text-center step-seven-bx">
+                                  <div>
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                  </div>
+                                </div>
+                              <div class="col-md-9">
+                                <h5 class="txt-grn">GraniteNET</h5>
+                                <p>Implementation and media interface (Interface to move media files into the GraniteNet Web Inerface for PWKS Sewer division</p>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="p-3 bdr-rd h-ct-box">
+                        <div class="row year-box bdr-left-grn">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-3 text-center step-eight-bx">
+                                  <div>
+                                    <i class="fa fa-shield" aria-hidden="true"></i>
+                                  </div>
+                                </div>
+                              <div class="col-md-9">
+                                <h5 class="txt-grn">AWS Solid Waste Migration</h5>
+                                <p>Migrated PWKS solid waste application to AWS for improved security and modern platform</p>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-right-grn">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-9">
+                                  <h5 class="txt-grn">AWS Victim Witness Migration</h5>
+                                  <p>Migrated DC Victim Witness Unit's Case Management System to AWS for improved security and modern platform</p>
+                                </div>
+                              <div class="col-md-3 text-center step-nine-bx">
+                                <div>
+                                  <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-left-grn">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-3 text-center step-ten-bx">
+                                  <div>
+                                    <i class="fa fa-file-o" aria-hidden="true"></i>
+                                  </div>
+                                </div>
+                              <div class="col-md-9">
+                                <h5 class="txt-grn">Attorney Invoice System</h5>
+                                <p>e-filing of motions (DC Juvenile Court enhancement to electronically file motions for Atty Fees with the State of Nebraska.</p>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-right-grn">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-9">
+                                  <h5 class="txt-grn">Application Patching</h5>
+                                  <p>Creation a process of identification, and delivery of application patching.  Also creation of processes and reports to identity and handle exceptions</p>
+                                </div>
+                              <div class="col-md-3 text-center step-eleven-bx">
+                                <div>
+                                  <i class="fa fa-indent" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-left-grn">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-3 text-center step-twelve-bx">
+                                  <div>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                  </div>
+                                </div>
+                              <div class="col-md-9">
+                                <h5 class="txt-grn">iNovah Cashering System</h5>
+                                <p>Implemented iNovah at three additional locations for Douglas County Health Department</p>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-right-grn">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-9">
+                                  <h5 class="txt-grn">OFD Zoll evaluation - Move to hosted services</h5>
+                                  <p>Overall evaluation of DOTComm hosted versus vendor hosted solutions for ePCR and FireRMS.  Effort has led the customer to move these applications to a vendor hosting model.   </p>
+                                </div>
+                              <div class="col-md-3 text-center step-thirteen-bx">
+                                <div>
+                                  <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row year-box bdr-left-grn">
+                          <div class="col-md-12 p-0">
+                            <div class="year-content-box">
+                              <div class="row vt-center">
+                                <div class="col-md-3 text-center step-fourteen-bx">
+                                  <div>
+                                    <i class="fa fa-window-restore" aria-hidden="true"></i>
+                                  </div>
+                                </div>
+                                <div class="col-md-9">
+                                  <h5 class="txt-grn">Environmental Services migration to FastLane</h5>
+                                  <p>Implementation of a new software at the landfill for transaction processing.  </p>
+                                </div>
+                              
+                              
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                      </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+          </div>
+          </div>
+
+         
+
+          
+          <div class="p-4" id="analytics_content">
+            <div class="row mb-3">
+              <div class="col-md-5 col-lg-2 mr-3 p-0 mb-2">
+                <button class="btn shadow p-0 btn-block p-3" id="analytic"><p class="analytics-tab mb-0">CITY OF OMAHA</p></button>
+              </div>
+              <div class="col-md-5 col-lg-2 mr-3 p-0 mb-2">
+                <button class="btn shadow p-0 btn-block p-3" id="analyticn"><p class="analytics-tab mb-0">DOUGLAS COUNTY</p></button>
+              </div>
+              
+             
+            </div>
+            <div id="analytic_city">
+              <iframe src="https://analytics.cityofomaha.org/" style="width: 100%;min-height: 70vh;"></iframe>
+            </div>
+            <div id="analytic_douglas">
+              <iframe src="https://analytics.douglascounty-ne.gov/" style="width: 100%;min-height: 70vh;"></iframe>
+            </div>
+            <div id="test">
+
+            </div>
+          </div>
+          <div class="" id="metrics_content">Metrics</div>
+          <div class="p-4" id="strategy_content">
+            <div class="row">
+              <div class="col-md-12 p-0">
+                <h3 class="frame-heading mb-3">2021/2022 - Applications & Analytics</h3>
+                <div class="blue-container">
+                  <div class="row p-2">
+                    <div class="col-md-12 text-center">
+                      <h4>Organization Mission</h4>
+                      <p>
+                        Continually innovate prioritize relentlessly to focus on digitizing services for the City &<br /> County to create a delightful user experience.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                 <div class="green-container">
+                  <div class="row p-2">
+                    <div class="col-md-12 text-center">
+                      <h4>Organization Vision</h4>
+                      <p>
+                        Utilize modern application development & support best practices to transform and speed up<br /> solution delivery.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="blue-container">
+                  <div class="row p-2">
+                    <div class="col-md-12 text-center">
+                      <h4>Key Events and Area of Focus</h4>
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="light-blue-container">
+                  <div class="row p-2">
+                    <div class="col-md-6">
+                      <ul>
+                        <li>Application Upgrades/Patches</li>
+                        <li>CMS Updates/Patches</li>
+                        <li>Core Programming Languages Updates</li>
+                        <li>AWS Infrastructure/Code Updates</li>
+                        <li>Framewrok Updates</li>
+                        <li>Database Upgrades/Patches</li>
+                        <li>Security Patches/Scans/Audits</li>
+                        <li>Compliance Reviews</li>
+                        <li>Application Enhancements</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul>
+                        <li>County Process (Year end, BOE, etc.)</li>
+                        <li>Application Inventory</li>
+                        <li>Disaster Recovery Tests</li>
+                        <li>Google License Renewal</li>
+                        <li>City/County Budgets</li>
+                        <li>Oracle/Mainframe Maintenance</li>
+                        <li>AIS Updates</li>
+                        <li>Cash Management System Updates</li>
+                        <li>Property/Tax Collection Changes</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="blue-container">
+                  <div class="row p-2">
+                    <div class="col-md-12 text-center">
+                      <h4>Key Metrics</h4>
+                    </div>
+                  </div>
+                </div>
+
+                 <div class="light-blue-container">
+                  <div class="row p-2">
+                    <div class="col-md-12">
+                      <ul>
+                        <li>Application Service Team Dashboards</li>
+                        <li>Standard Metrics: Customer SLA, Customer Sat, Projects/Tickets</li>
+                        <li>Application Metics: Uptime, Performance, Transactions,Error Rate, CPU, Memory, Etc.</li>
+                        <li>Website Metrics: Traffic, Pageviews, Performance, etc.</li>
+                        <li>Google Analytics</li>
+                        <li>Large Strategic Application Roadmaps</li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+
+                <div class="blue-container">
+                  <div class="row p-2">
+                    <div class="col-md-6 text-center">
+                      <h4>#1 Organizational Focus <br /> (Aligned to Strategic Guiding Principles)</h4>
+                    </div>
+                    <div class="col-md-6 text-center">
+                      <h4>#1 Organizational Goal <br /> (12 to 18 Month Horizon)</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="light-blue-container">
+                  <div class="row vt-center">
+                    <div class="col-md-6 text-center">
+                      <h5>Public Decision Framework (6Rs) and <br /> Application Guidelines</h5>
+                    </div>
+                    <div class="col-md-6 border-dash-left p-2">
+                      <h5 class="text-center">Upgrade & Modernize Key Applications:</h5>
+                      <ul>
+                        <li>Oracle 12.2.10 Upgrade</li>
+                        <li>OMS/OWP Rewrite</li>
+                        <li>MF WebFocus Reporting</li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <button class="openbtn" onclick="openNav()">☰</button>   -->
+    </div>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.getElementById("header_sec").style.marginLeft= "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.getElementById("header_sec").style.marginLeft= "0";
+    }
+    
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+
+    <script>
+      $(".nav-item").click(function() {
+            
+          // Select all list items
+          var listItems = $(".nav-item");
+            
+          // Remove 'active' tag for all list items
+          for (let i = 0; i < listItems.length; i++) {
+              listItems[i].classList.remove("active");
+          }
+            
+          // Add 'active' tag for currently selected item
+          this.classList.add("active");
+      });
+  </script>
+  <script>
+    $(".nav-btn").click(function() {
+            
+        // Select all list items
+        var listItems = $(".nav-btn");
+          
+        // Remove 'active' tag for all list items
+        for (let i = 0; i < listItems.length; i++) {
+            listItems[i].classList.remove("active");
+        }
+          
+        // Add 'active' tag for currently selected item
+        this.classList.add("active");
+    });
+</script>
+  <script>
+    $("#dash_nav").on('click', function() {
+      // $("#six_content").show();
+      $("#six_content, #method_content, #guide_content, #year_content, #analytics_content, #metrics_content, #strategy_content").hide();
+});
+    $("#six_nav").on('click', function() {
+      $("#six_content").show();
+      $("#method_content, #guide_content, #year_content, #analytics_content, #metrics_content, #strategy_content").hide();
+});
+    $("#method_nav").on('click', function() {
+          $("#method_content").show();
+          $("#six_content, #guide_content, #year_content, #analytics_content, #metrics_content, #strategy_content").hide();
+    });
+    $("#guide_nav").on('click', function() {
+          $("#guide_content").show();
+          $("#six_content, #method_content, #year_content, #analytics_content, #metrics_content, #strategy_content").hide();
+    });
+    $("#year_nav").on('click', function() {
+          $("#year_content").show();
+          $("#six_content, #method_content, #guide_content, #analytics_content, #metrics_content, #strategy_content").hide();
+    });
+   
+    $("#analytics_nav").on('click', function() {
+          $("#analytics_content").show();
+          $("#six_content, #method_content, #guide_content, #year_content, #metrics_content, #strategy_content").hide();
+    });
+    $("#metrics_nav").on('click', function() {
+          $("#metrics_content").show();
+          $("#six_content, #method_content, #guide_content, #year_content, #analytics_content, #strategy_content").hide();
+    });
+     $("#strategy_nav").on('click', function() {
+          $("#strategy_content").show();
+          $("#six_content, #method_content, #guide_content, #year_content, #analytics_content, #metrics_content").hide();
+    });
+    $("#analytic").on('click', function() {
+          $("#analytic_city").show();
+          $("#analytic_douglas").hide();
+    });
+    $("#analyticn").on('click', function() {
+          $("#analytic_douglas").show();
+          $("#analytic_city").hide();
+    });
+
+    $("#twenty").on('click', function() {
+          $("#twenty_content").show();
+          $("#twentyone_content").hide();
+    });
+    $("#twentyone").on('click', function() {
+          $("#twentyone_content").show();
+          $("#twenty_content").hide();
+    });
+   
+    
+  </script>
+  <script>
+    $("#year_nav").on('click', function() {
+          $(".count_upper").hide();
+    });
+
+    $("#dash_nav, #six_nav, #method_nav, #guide_nav, #analytics_nav, #metrics_nav").on('click', function() {
+          $(".count_upper").show();
+    });
+
+  </script>
+  
+   
+  </body>
+</html>
